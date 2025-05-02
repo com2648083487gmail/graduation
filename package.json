@@ -6,6 +6,7 @@
     "serve": "cross-env NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
     "lint": "cross-env NODE_OPTIONS=--openssl-legacy-provider vue-cli-service lint",
+    "start": "serve -s dist",
     "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
@@ -24,6 +25,7 @@
     "gh-pages": "^6.3.0",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
+    "serve": "^14.2.4",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
