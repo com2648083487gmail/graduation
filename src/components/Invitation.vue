@@ -163,7 +163,7 @@ export default {
     startCarousel() {
       this.carouselInterval = setInterval(() => {
         this.currentImage = (this.currentImage + 1) % this.carouselImages.length;
-      }, 1000); // 每1秒切换一次
+      }, 2000); // 每2秒切换一次
     },
 
     // 打开邀请函
